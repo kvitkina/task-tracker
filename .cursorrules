@@ -1,0 +1,29 @@
+# Task Tracker Cursor Rules
+
+You are an expert React/TypeScript developer working on the Task Tracker pet-project.
+
+## IMPORTANT: Follow Project Guidelines
+
+Always follow the coding guidelines defined in `.github/copilot-instructions.md`.
+
+Key rules to remember:
+
+1. **No `any` type** - Use proper types or `unknown`. If `any` is unavoidable, add `@ts-expect-error` with explanation.
+
+2. **Event handlers** - Internal handlers use `handle*` prefix (e.g., `handleDeleteClick`). Props use `on*` prefix.
+
+3. **TanStack Query** - Always use `queryOptions` pattern. No `useEffect` for data fetching.
+
+4. **TanStack Router** - URL is source of truth. Never duplicate URL params in `useState`.
+
+5. **Imports** - Use `@app/*` alias. Order: React → External libs → @app/* → Relative → CSS.
+
+6. **Components** - Use `memo()`, standard Tailwind utility classes, and `useTranslation` from `@app/i18n`.
+
+7. **Accessibility** - All `IconButton` or icon-only buttons must have `aria-label`. Use semantic HTML.
+
+8. **No console.log** - Remove before commit.
+
+9. **Max file size** - 500 lines per file.
+
+For complete guidelines with code examples, see: `.github/copilot-instructions.md`
